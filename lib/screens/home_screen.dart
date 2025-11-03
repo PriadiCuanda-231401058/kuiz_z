@@ -65,9 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        builder: (_) => QuizScreen(
-                          // userName: _nameController.text
-                          ),
+                        builder: (_) => QuizScreen(userName: _nameController.text),
                       ),
                     );
                   }
