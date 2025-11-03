@@ -71,7 +71,6 @@ class _QuizScreenState extends State<QuizScreen> {
                   setState(() {
                     selectedOption = index;
                   });
-                  quiz.answerQuestion(index);
                 },
               ),
               const Spacer(),
@@ -82,6 +81,7 @@ class _QuizScreenState extends State<QuizScreen> {
                 child: ElevatedButton(
                   onPressed: selectedOption != null
                       ? () {
+                          quiz.answerQuestion(selectedOption!);
                           final isLast = quiz.currentIndex == quiz.questions.length - 1;
                           if (isLast) {
                             Navigator.pushReplacement(

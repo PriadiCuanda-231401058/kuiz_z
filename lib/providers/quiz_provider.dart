@@ -17,9 +17,6 @@ class QuizProvider extends ChangeNotifier {
     if (_questions[currentIndex].answerIndex == selectedIndex) {
       score++;
     }
-    if (currentIndex < _questions.length - 1) {
-      currentIndex++;
-    }
     notifyListeners();
   }
 
