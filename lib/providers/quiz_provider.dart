@@ -6,6 +6,8 @@ class QuizProvider extends ChangeNotifier {
     Question('Ibukota Indonesia?', ['Jakarta', 'Medan', 'Bandung', 'Surabaya'], 0),
     Question('2 + 2 = ?', ['3', '4', '5', '6'], 1),
     Question('Warna bendera Indonesia?', ['Merah Putih', 'Hijau Putih', 'Biru Kuning', 'Putih Merah'], 0),
+    Question('Siapa presiden pertama Indonesia?', ['Soekarno', 'Soeharto', 'Hatta Mohamad', 'Joko Widodo'], 0),
+    Question('Apa nama ibukota provinsi Jawa Barat?', ['Jakarta', 'Bandung', 'Semarang', 'Yogyakarta'], 1),
   ];
 
   int currentIndex = 0;
